@@ -74,7 +74,7 @@
       .crd {
         position: relative;
         width: 350px;
-      min-height: 400px;
+        min-height: 400px;
         border-radius: 10px;
         box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
         transition: 0.3s;
@@ -386,18 +386,6 @@
         column-gap: 1.3rem;
       }
 
-      .text-blk {
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        padding-top: 0px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        line-height: 25px;
-      }
-
       .responsive-cell-block {
         min-height: 75px;
       }
@@ -430,21 +418,21 @@
       }
 
       .section-head {
-        font-size: 60px;
-        line-height: 70px;
-        margin-top: 0px;
+        /* font-size: 50px; */
+        /* line-height: 70px; */
+        margin-top: 20px;
         margin-right: 0px;
         margin-bottom: 24px;
         margin-left: 0px;
       }
 
       .section-body {
-        font-size: 14px;
-        line-height: 18px;
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 64px;
-        margin-left: 0px;
+        line-height: 20px;
+        /* margin-top: 0px; */
+        /* margin-right: 0px; */
+        margin-bottom: 60px;
+        /* margin-left: 0px; */
+
       }
 
       .team-cards-outer-container {
@@ -580,11 +568,6 @@
           justify-content: center;
         }
 
-        .section-head {
-          font-size: 50px;
-          line-height: 55px;
-        }
-
         .img-box {
           max-width: 109px;
           max-height: 109px;
@@ -614,25 +597,12 @@
           margin-left: 0px;
         }
 
-        .section-body {
-          margin-top: 0px;
-          margin-right: 0px;
-          margin-bottom: 0px;
-          margin-left: 0px;
-         
-        }
-
         .img-box {
           margin-top: 0px;
           margin-right: 30px;
           margin-bottom: 0px;
           margin-left: 0px;
         }
-
-        .content-box {
-          text-align: center;
-        }
-       
 
         .content-container {
           margin-top: 0px;
@@ -648,6 +618,7 @@
         .team-cards-inner-container {
           justify-content: center;
         }
+       
       }
 
       @media (max-width: 500px) {
@@ -662,18 +633,6 @@
           font-size: 40px;
           line-height: 45px;
         }
-
-        .content-box {
-          padding-top: 0px;
-          padding-right: 0px;
-          padding-bottom: 0px;
-          padding-left: 0px;
-        }
-
-        .section-body {
-          font-size: 12px;
-        }
-
         .img-box {
           max-width: 68px;
           max-height: 68px;
@@ -688,13 +647,9 @@
         }
 
         .content-box {
-          margin-top: 0px;
-          margin-right: 0px;
           margin-bottom: 46px;
-          margin-left: 0px;
-          text-align: left;
-        }
 
+        }
         .content-container {
           margin-top: 0px;
           margin-right: 0px;
@@ -1399,18 +1354,15 @@
  </div>
 
  <!-- Primary Goals End -->
+ 
  <!-- timeline start -->
   <h1 class="text-center mt-3">Timeline</h1>
   <section class="">
-      <div class="time">
+    <div class="time">
       <div class="timeline">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div
-              class="swiper-slide"
-              style="background-image: url(./img/time1.jpg)"
-              data-year="NOV 2023"
-            >
+            <div class="swiper-slide" style="background-image: url(./img/time1.jpg)" data-year="NOV 2023">
               <div class="swiper-slide-content">
                 <span class="timeline-year">2023</span>
                 <h4 class="timeline-title" style="color: #fff;">NOVEMBER 1st</h4>
@@ -1420,11 +1372,8 @@
                 </p>
               </div>
             </div>
-            <div
-              class="swiper-slide"
-              style="background-image: url(./img/time2.jpg)"
-              data-year="DEC 2023"
-            >
+            <div class="swiper-slide" style="background-image: url(./img/time2.jpg)"
+              data-year="DEC 2023">
               <div class="swiper-slide-content">
                 <span class="timeline-year">2023</span>
                 <h4 class="timeline-title" style="color: #fff;">DECEMBER</h4>
@@ -1500,6 +1449,7 @@
     </section>
 
  <!-- timeline end -->
+
  <!-- cards secrtion start -->
    <h1 class="text-center mt-3">How we get there</h1>
   <section class="crdimage">
@@ -1551,33 +1501,7 @@
 
 
 
-    <!-- logout -->
-    <div class="modal fade" id="logoutConfirmationModal" tabindex="-1" aria-labelledby="logoutConfirmationModalLabel"
-        data-bs-backdrop="static" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="logoutConfirmationModalLabel">
-                        Confirm Logout
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">Are you sure you want to logout?</div>
-                <div class="modal-footer">
-                    <!-- Cancel button to close the modal -->
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Cancel
-                    </button>
-                    <!-- Logout button to trigger the logout -->
-                    <button type="button" class="btn btn-primary" id="confirmLogoutBtn">
-                        Logout
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+   
   
 
     <!-- Quote Start -->
@@ -1818,6 +1742,23 @@
     <br>
     <!-- <TESTIMOIALENDS -->
 
+      <div class="deliver-container">
+        <div  class="deliver-content">
+        <h1 class="text-center text-info">What we Would Deliver</h1>
+        <p >At Hamad International Shipping Cochin , we are a fusion of experienced logistics
+          professionals with Core exposure in all facets of shipping with firm good
+          professional networking within industry coupled with onboarding of young talent ,
+          we believe in giving 100% tailor made solutions to our customers suiting their
+          business module</p><br>
+          <p >
+          We look forward to thrive benchmarked on our market knowledge ,<span>Trust</span> which
+          we have being able to instill amidst our customers and the level of <span>Transparency</span>
+          in our dealing with a great professionally competent team behind us to guide us
+          through thick and thin ,as we passionately feel "<span>Efficiencies will come from
+            proactively transforming how we do business. In a structured manner</span> “ </p>
+          </div>   
+      </div>
+
 
     <!-- Team Start -->
     <section class="team">
@@ -1827,10 +1768,10 @@
           class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-4 wk-ipadp-5 content-container"
         >
           <div class="content-box" style="font-family: Roboto Condensed", sans-serif>
-            <h6 class="text-blk section-head" style="font-size: 35px">
+            <h6 class="section-head" style="font-size: 35px">
               MEET OUR TEAM AT COCHIN
             </h6>
-            <p class="text-blk section-body" style="font-size: 20px;">
+            <p class="section-body" style="font-size: 20px;">
               We intend to provide our Principals with access to cargo sources
               with maximum yield through our network. We guarantee our
               Principals prompt remittance of freight due, first class vendors
